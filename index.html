@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    </style>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | News homepage</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="normalize.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+
+<body id="body">
+  <main class="main" id="main">
+    <header class="header">
+      <div class="header-img">
+        <img src="/images/logo.svg" alt="logo">
+      </div>
+      <div class="header-list">
+        <ul>
+          <li><a href="#home-link">Home</a></li>
+          <li><a href="#new-link">New</a></li>
+          <li><a href="#popular-link">Popular</a></li>
+          <li><a href="#trending-link">Trending</a></li>
+          <li><a href="#footer">Categories</a></li>
+        </ul>
+      </div>
+
+      <div class="menu-logo">
+        <button onclick="abrir()">
+          <img src="/images/icon-menu.svg" alt="icon-menu">
+        </button>
+      </div>
+
+      <div class="menu-design" id="menu">
+        <div class="menu-flex">
+          <div class="menu-icon">
+            <button onclick="cerrar()">
+              <img src="/images/icon-menu-close.svg" alt="icon-menu-close">
+            </button>
+          </div>
+          <div class="menu-list">
+            <ul>
+              <li><a href="#home-link" onclick="cerrar()">Home</a></li>
+              <li><a href="#new-link" onclick="cerrar()">New</a></li>
+              <li><a href="#popular-link" onclick="cerrar()">Popular</a></li>
+              <li><a href="#trending-link" onclick="cerrar()">Trending</a></li>
+              <li><a href="#footer-link" onclick="cerrar()">Categories</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-background" id="menu-background" onclick="cerrar()"></div>
+    </header>
+
+    <div class="container-articleAside" id="home-link">
+      <article class="article">
+        <div class="article-img">
+          <img src="/images/image-web-3-desktop.jpg" alt="main-img">
+          <img src="/images/image-web-3-mobile.jpg" alt="main-img-mobile">
+        </div>
+        <div class="container-tittleText">
+          <div class="article-tittle">
+            <h1>The Bright Future of Web 3.0?</h1>
+          </div>
+          <div class="article-text">
+            <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+              But is it really fulfilling its promise?</p>
+            <div class="boton">
+              <input type="button" value="READ MORE">
+            </div>
+          </div>
+        </div>
+      </article>
+  
+      <aside class="aside aside-hidden" id="new-link">
+        <div class="aside-tittle">
+          <h2>New</h2>
+        </div>
+        <div class="aside-section">
+          <h3><a href="#">Hydrogen VS Electric Cars</a></h3>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </div>
+        <div class="separazione" id="popular-link">
+          <div class="riga"></div>
+        </div>
+        <div class="aside-section">
+          <h3><a href="#">The Downsides of AI Artistry</a></h3>
+          <p>What are the possible adverse effects of on-demand AI image generation?</p>
+        </div>
+        <div class="separazione">
+          <div class="riga"></div>
+        </div>
+        <div class="aside-section">
+          <h3><a href="#">Is VC Funding Drying Up?</a></h3>
+          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </div>
+      </aside>
+    </div>
+
+    <footer class="footer" id="footer-link">
+      <div class="footer-container">
+        <div class="footer-box">
+          <div class="box-img">
+            <img src="/images/image-retro-pcs.jpg" alt="footer-img1">
+          </div>
+          <div class="footer-text">
+            <h2>01</h2>
+            <p class="first-p">Reviving Retro PCs</p>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+  
+        </div>
+        <div class="footer-box" id="trending-link">
+          <div class="box-img">
+            <img src="/images/image-top-laptops.jpg" alt="footer-img2">
+          </div>
+          <div class="footer-text">
+            <h2>02</h2>
+            <p class="first-p">Top 10 Laptops of 2022</p>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </div>
+  
+        <div class="footer-box">
+          <div class="box-img">
+            <img src="/images/image-gaming-growth.jpg" alt="footer-img3">
+          </div>
+          <div class="footer-text">
+            <h2>03</h2>
+            <p class="first-p">The Growth of Gaming</p>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="aside-footer aside">
+        <div class="aside-tittle">
+          <h2>New</h2>
+        </div>
+        <div class="aside-section">
+          <h3><a href="#">Hydrogen VS Electric Cars</a></h3>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </div>
+        <div class="separazione">
+          <div class="riga"></div>
+        </div>
+        <div class="aside-section">
+          <h3><a href="#">The Downsides of AI Artistry</a></h3>
+          <p>What are the possible adverse effects of on-demand AI image generation?</p>
+        </div>
+        <div class="separazione">
+          <div class="riga"></div>
+        </div>
+        <div class="aside-section">
+          <h3><a href="#">Is VC Funding Drying Up?</a></h3>
+          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
