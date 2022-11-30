@@ -1,3 +1,3 @@
 # News-homepage
 
-site web: https://anewhomepagesfrontenddev.netlify.app/
+site web: https://anewhomepagefrontenddev.netlify.app/
